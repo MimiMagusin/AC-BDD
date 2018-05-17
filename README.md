@@ -106,6 +106,10 @@ According to [Dan North](https://dannorth.net/introducing-bdd/)
 ### How can I extend legacy code?
 * Set up boundaries, isolate your code (+ that that it is coupled to)
 * Read the book Working with legacy code by M. Feathers
+### What is good testing?
+![BICEP testing](https://image.slidesharecdn.com/whyunittestingl-1274867650307-phpapp01/95/why-unit-testingl-22-728.jpg?cb=1274866550)
+* A test that has one Assert and that is readable
+* It is easier to define bad tests.
 
 
 ## Interesting Sources
@@ -114,4 +118,5 @@ According to [Dan North](https://dannorth.net/introducing-bdd/)
 * BDD: [Dan North - Introducing BDD](https://dannorth.net/introducing-bdd/)
 * Use Cases: [TynerBlain.com](http://tynerblain.com/blog/2007/04/09/sample-use-case-example/)
 * [Specification by Example](https://www.thoughtworks.com/insights/blog/specification-example)
+* Refactoring: [Refactoring by Kent Beck](https://www.csie.ntu.edu.tw/~r95004/Refactoring_improving_the_design_of_existing_code.pdf)
 
