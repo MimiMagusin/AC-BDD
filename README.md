@@ -29,9 +29,13 @@ Code Reviews: Ask questions, make observations, help make the code better. Some 
 
 * You want to be able to use info/methods from parent classes, but you don't want your subclass to be able to change the parent class
 * Original Meyer defenition:
+
 ![Open Closed Principle according to Meyer](https://image.slidesharecdn.com/softwareengineeringprinciplesmarcellothiry-151116193841-lva1-app6892/95/software-engineering-principles-marcello-thiry-55-638.jpg?cb=1447702857)
+
 * In other words:
+
 ![In other words](https://image.slidesharecdn.com/obbjectorienteddesignsolidprinciples-12758863409589-phpapp02/95/object-oriented-design-solid-principles-24-728.jpg?cb=1279973465)
+
 * It means that we should strive to write code that doesn’t have to be changed every time the requirements change: it should be reusable.
 
 
@@ -78,8 +82,10 @@ According to [Dan North](https://dannorth.net/introducing-bdd/)
 
 ### Techniques
 * Frameworks and DSL's (xBehave, xSpec, Gherkin)
+
 ![Gherkin Example](https://qph.fs.quoracdn.net/main-qimg-28435b52a9e1943d397b6cc1c5745f4d)
 *^This  is a Gherkin example^*
+
 * A framework for collaboration and clarity
 
 ## Assignments
