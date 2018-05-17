@@ -1,0 +1,3 @@
+rootProject.name = 'BDD'
+include 'Kata'
+
