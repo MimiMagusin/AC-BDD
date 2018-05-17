@@ -33,11 +33,11 @@ class WordWrapper {
     fun breaksWordLongerThanColNum() {
         //Assign
         val longWord = "consectetur"
-        val oucomeLongWord =  "consectetu\nr"
+        val outcomeLongWord =  "consectetu\nr"
         //Act
         val longWordString = wrapper.breakString(longWord, colNum)
         //Assert
-        Assertions.assertThat(longWordString).isEqualTo()
+        Assertions.assertThat(longWordString).isEqualTo(outcomeLongWord)
     }
 }
 
