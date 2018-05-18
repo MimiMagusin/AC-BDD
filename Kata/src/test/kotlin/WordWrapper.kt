@@ -2,6 +2,10 @@ import org.assertj.core.api.Assertions
 import kotlin.test.Test
 
 
+//You write a class called Wrapper, that has a single static function named wrap that takes two arguments, a string,
+// and a column number. The function returns the string, but with line breaks inserted at just the right places to make
+// sure that no line is longer than the column number. You try to break lines at word boundaries.
+
 class WordWrapper {
     //Assign
     val wrapper = Wrapper();
@@ -42,11 +46,29 @@ class WordWrapper {
 }
 
 class Wrapper {
+
+    fun breakLongWords(word: String, colNum: Int): String {
+        var adaptedWord = word
+        if (word.length > colNum) {
+            adaptedWord = StringBuffer(word).insert(10, "\n").toString();
+        }
+        return adaptedWord
+    }
+
+    fun takeCareOfLongWords(splittedString: List<String>, colNum: Int): String {
+        var takenCareOfLongWords: String = ""
+        for (word in splittedString) {
+            takenCareOfLongWords = takenCareOfLongWords + breakLongWords(word, colNum) + "\n"
+        }
+        return takenCareOfLongWords
+    }
+
+
     fun breakString(string: String, colNum: Int): String{
-        return string.replace(" ", "\n")
+
+        var stringPerWord = string.split(" ")
+        var stringWithoutLongWords = takeCareOfLongWords(stringPerWord, colNum )
+
+        return stringWithoutLongWords.dropLast(1)
     }
 }
-
-//You write a class called Wrapper, that has a single static function named wrap that takes two arguments, a string,
-// and a column number. The function returns the string, but with line breaks inserted at just the right places to make
-// sure that no line is longer than the column number. You try to break lines at word boundaries.
