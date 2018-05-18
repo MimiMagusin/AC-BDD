@@ -90,7 +90,7 @@ According to [Dan North](https://dannorth.net/introducing-bdd/)
 
 ## Assignments
 * Most assignments can be found in `./Kata/src/test/kotlin`
-* We also build a project with multiple people. You can find the repo [here]().
+* We also build a project with multiple people. You can find the repo [here](https://github.com/EAPCMC/GGOAT).
 
 ## Kotlin
 ### Mutable vs Immutable lists
